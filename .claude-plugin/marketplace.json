@@ -1,14 +1,14 @@
 {
-  "name": "kerryback-tutors",
+  "name": "ricebusiness",
   "owner": {
-    "name": "Kerry Back"
+    "name": "Rice Business"
   },
-  "description": "Tutoring skills for Claude Code: one-on-one coaching through finance and investments material, where the student works the problems and Claude gives diagnostic feedback rather than solutions.",
+  "description": "Claude Code plugins from Rice Business. Currently ships the tutor plugin: a shared collection of tutoring skills that coach a student through a piece of course material one-on-one, with the student producing the answers and Claude diagnosing the wrong ones rather than presenting worked solutions.",
   "plugins": [
     {
-      "name": "binomial-tutor",
-      "source": "./plugins/binomial-tutor",
-      "description": "Tutors a student through binomial option pricing one-on-one: replicating portfolios and no-arbitrage in a one-period tree, where the risk-neutral probability comes from and what it does not mean, two-period and n-period backward induction with dynamic hedging, and American options and early exercise. Claude asks the student to produce the numbers and diagnoses wrong answers from the number itself rather than handing over solutions. Ships a pricing script that values European and American calls and puts on a recombining tree, reports the replicating portfolio at every node, plots the trees, and blanks a node to turn any tree into an exercise."
+      "name": "tutor",
+      "source": "./plugins/tutor",
+      "description": "One-on-one tutoring skills for Rice Business courses. Each skill coaches a student through a piece of course material by handing them problems and diagnosing their answers rather than presenting worked solutions. Currently ships binomial option pricing (replicating portfolios, risk-neutral probabilities, backward induction, early exercise) and agency law (actual and apparent authority, ratification and estoppel, liability on the contract). Install once and every tutor in the collection is available as /tutor:<subject>."
     }
   ]
 }

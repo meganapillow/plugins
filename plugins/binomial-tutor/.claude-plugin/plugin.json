@@ -1,8 +1,0 @@
-{
-  "name": "binomial-tutor",
-  "description": "Tutors a student through binomial option pricing one-on-one: replicating portfolios and no-arbitrage in a one-period tree, where the risk-neutral probability comes from and what it does not mean, two-period and n-period backward induction with dynamic hedging, and American options and early exercise. Claude asks the student to produce the numbers and diagnoses wrong answers from the number itself rather than handing over solutions. Ships a pricing script that values European and American calls and puts on a recombining tree, reports the replicating portfolio at every node, plots the trees, and blanks a node to turn any tree into an exercise.",
-  "version": "1.0.0",
-  "author": {
-    "name": "Kerry Back"
-  }
-}

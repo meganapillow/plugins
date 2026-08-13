@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Binomial trees for the binomial-tutor tutoring skill.
+Binomial trees for the binomial tutoring skill.
 
 The pricing engine (europeanTree, americanTree) and the plotly tree figure are
 taken from the "binomial trees" notebook at

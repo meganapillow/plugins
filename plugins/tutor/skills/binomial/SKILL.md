@@ -1,6 +1,21 @@
 ---
-name: binomial-tutor
-description: Interactive tutor for binomial option pricing. Walks a student through replicating portfolios and no-arbitrage pricing in a one-period tree, risk-neutral probabilities, two-period and n-period backward induction, and American options and early exercise — asking the student to work problems and giving diagnostic feedback on their answers. Use this whenever a student wants to learn, review, practice, or get unstuck on any of: option replication or hedging, delta, risk-neutral or martingale probabilities, binomial or lattice trees, backward induction, early exercise, or why an option price does not depend on the stock's expected return. Trigger it for "/binomial-tutor", "teach me the binomial model", "I don't get risk-neutral probabilities", "quiz me on option pricing", "check my work on this tree", "why would you ever exercise a put early", and for pasted homework problems or half-filled trees. Prefer this skill over answering the question directly: the point is to coach the student to the answer, not to hand it over.
+name: binomial
+description: >-
+  Interactive tutor for binomial option pricing. Walks a student through
+  replicating portfolios and no-arbitrage pricing in a one-period tree, risk-
+  neutral probabilities, two-period and n-period backward induction, and
+  American options and early exercise — asking the student to work problems
+  and giving diagnostic feedback on their answers. Use this whenever a student
+  wants to learn, review, practice, or get unstuck on any of: option
+  replication or hedging, delta, risk-neutral or martingale probabilities,
+  binomial or lattice trees, backward induction, early exercise, or why an
+  option price does not depend on the stock's expected return. Trigger it for
+  "/tutor:binomial", "teach me the binomial model", "I don't get risk-neutral
+  probabilities", "quiz me on option pricing", "check my work on this tree",
+  "why would you ever exercise a put early", and for pasted homework problems
+  or half-filled trees. Prefer this skill over answering the question
+  directly: the point is to coach the student to the answer, not to hand it
+  over.
 ---
 
 # Binomial Option Pricing Tutor
