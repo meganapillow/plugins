@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: kingwood-book-club
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m app.manage init-db && uvicorn app.main:app --host 0.0.0.0 --port $PORT --workers 1
+    healthCheckPath: /health
+    disk:
+      name: club-images
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.10
+      - key: ENVIRONMENT
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: kingwood-book-club-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: APP_URL
+        sync: false
+      - key: PUBLIC_SITE_URL
+        sync: false
+      - key: PAGES_ORIGINS
+        sync: false
+      - key: UPLOAD_DIR
+        value: /var/data/uploads
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+databases:
+  - name: kingwood-book-club-db
+    plan: basic-256mb
+    ipAllowList: []
